@@ -1,0 +1,36 @@
+{
+  "name": "chat-analyzer-temp",
+  "description": "analyze and create chat statistics",
+  "version": "0.0.3",
+  "main": "dist/index.bundle.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mowolf/conv-analayzer.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "analysis",
+    "chat",
+    "statistics"
+  ],
+  "author": "Moritz Wolf",
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "start": "yarn clean && webpack --mode development --watch",
+    "build": "yarn clean && webpack --mode production",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^22.4.4",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
